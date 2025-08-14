@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* 🌐 Global Font */
+body {
+
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* 🌈 Gradient Backgrounds for Sections */
+.home-section,
+.about-section,
+.skills-section,
+.projects-section, 
+.contact-section
+{
+  background: linear-gradient(to right, #0f111a, #141726);
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+/* 🌟 Navbar */
+.custom-navbar {
+  background-color: #121212;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.text-brand {
+  color: #a78bfa !important;
+  font-size: 1.6rem;
+}
+
+.navbar-nav .nav-link {
+  color: #f0f0f0 !important;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #bb86fc !important;
+}
+
+/* 👣 Footer */
+.footer-dark {
+  background-color: #1b1b1f;
+  border-top: 1px solid #2a2a2a;
+  padding: 1rem 0;
+  text-align: center;
+  color: #ccc;
+}
+
+.footer-dark a {
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+.footer-dark a:hover {
+  color: #bb86fc;
+  transition: color 0.3s ease;
+}
+
+/* 🖼️ Profile / Skill Images */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.profile-img {
+  max-width: 80%;
+  border: 2px solid #8f5eff;
+  padding: 5px;
+  border-radius: 10px;
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+}
+
+/* ✏️ Reusable Text Classes */
+.highlight {
+  color: #8f5eff;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.text-violet {
+  color: #a78bfa;
+}
+
+.bg-purple {
+  background-color: #a67eff !important;
+}
+.btn-outline-purple {
+  color: #a67eff;
+  border: 1px solid #a67eff;
+}
+.btn-outline-purple:hover {
+  background-color: #a67eff;
+  color: white;
+}
+
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.zoom-in {
+  animation: zoomFade 3s ease-in-out;
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card-img-top {
+  height: 200px;  /* jitna chhota chahiye utna set karo */
+  object-fit: cover; /* image crop karke fit karegi */
+}
+
+
+
+
+
+
+
+
+
+
