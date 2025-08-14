@@ -73,7 +73,7 @@ import { SiGmail } from 'react-icons/si';
 
 
 const Contact = () => {
-  const Backend_URL="http://localhost:5000" || "https://portfolio-backend-k0bm.onrender.com"
+  // const Backend_URL="http://localhost:5000" || "https://portfolio-backend-k0bm.onrender.com"
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,7 +89,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`${Backend_URL}/api/contact`, {
+      const res = await fetch('https://portfolio-backend-k0bm.onrender.com/api/contact', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
