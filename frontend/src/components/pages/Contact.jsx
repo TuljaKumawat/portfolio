@@ -73,7 +73,7 @@ import { SiGmail } from 'react-icons/si';
 
 
 const Contact = () => {
-  const Backend_URL="http://localhost:5000" || "https://portfolio-backend-3yu4.onrender.com"
+  const Backend_URL="http://localhost:5000" || "https://portfolio-backend-k0bm.onrender.com"
   const [formData, setFormData] = useState({
     name: '',
     email: '',
