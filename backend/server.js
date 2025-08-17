@@ -4,7 +4,7 @@ const cors = require('cors')
 const contactRouter = require('./routers/contactRouter')
 require('dotenv').config()
 
-app.use(cors({ origin: 'http://localhost:3000' || "https://portfolio-frontend-jim0.onrender.com " })); // adjust as needed
+app.use(cors({ origin: 'http://localhost:3000' // "https://portfolio-frontend-jim0.onrender.com " })); // adjust as needed
 app.use(express.json());
 
 
